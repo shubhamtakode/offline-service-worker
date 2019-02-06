@@ -3,7 +3,7 @@
       <script>
         if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/offline-service-worker/sw.js', {
-            scope: '/'
+            scope: '/offline-service-worker/'
         }).then(function(registration) {
             console.log('Service Worker Registered');
         });
